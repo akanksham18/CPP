@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    int a = 2;
-    int b = 3;
+    int a = 2; // 010
+    int b = 3; // 011
 
     cout << "Bitwise AND = " << (a & b) << endl;
     cout << "Bitwise OR = " << (a | b) << endl;
