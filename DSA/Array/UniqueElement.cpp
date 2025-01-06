@@ -1,3 +1,4 @@
+// only one number is unique and remaining appears twice
 #include <iostream>
 using namespace std;
 
@@ -15,21 +16,11 @@ int main()
     {
         cin >> a[i];
     }
-
-    // swapping alternate elements
-    for (int i = 0; i < n; i = i + 2)
-    {
-        if (i + 1 < n)
-        {
-            int temp = a[i];
-            a[i] = a[i + 1];
-            a[i + 1] = temp;
-        }
-    }
-
-    // printing array elements
+    int ans = 0;
     for (int i = 0; i < n; i++)
     {
-        cout << a[i] << " ";
+        ans = ans ^ a[i];
     }
+
+    cout << "Unique Element is : " << ans;
 }
